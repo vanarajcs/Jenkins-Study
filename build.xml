@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<project name="Hello World Build Project" default="init">
+
+   <property name="sitename" value="www.tutorialspoint.com"/>
+   <property name="email" value="vanaraj@assistanz.com"/>
+   <property file="build.properties" />
+   <property name="src" value="src"></property>
+   <property name="build" value="build"></property>
+   <property name="lib" value="lib"></property>
+   <property name="dist" value="dist"></property>
+   
+   <target name="all" depends="init, clean"></target>
+   
+   <target name="clean" description="Clean all directories" >
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+        <delete dir="${lib}"/>
+        <delete dir="${src}"/>
+    </target>
+    
+    <target name="init" depends="clean">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist}"/>
+        <mkdir dir="${src}"/>
+        <mkdir dir="${lib}"/>
+    </target>
+
+</project>  
