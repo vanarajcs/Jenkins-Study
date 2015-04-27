@@ -4,8 +4,8 @@
    <property name="sitename" value="www.tutorialspoint.com"/>
    <property name="email" value="vanaraj@assistanz.com"/>
    <property file="build.properties" />
-   <property name="src" value="src"></property>
-   <property name="build" value="build"></property>
+   <property name="src" value="srcs"></property>
+   <property name="build" value="builds"></property>
    <property name="lib" value="lib"></property>
    <property name="dist" value="dist"></property>
    
